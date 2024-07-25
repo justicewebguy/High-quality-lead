@@ -1,0 +1,28 @@
+/* GLOBAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**** HEADER STARTS*****/
+.header{
+    background-color: rgb(47, 7, 245);
+    height: 90vh;
+}
+/* NAV STARTS */
+.nav-contents{
+    margin: 0;
+    max-width: 1140;
+    background-color: black;
+}
+.nav-contents{
+    clear: both;
+    content: "";
+    display: table;
+}
+.left-nav-content{
+    float: left;
+}
+.right-nav-content{
+float: right;
+}

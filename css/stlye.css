@@ -1,0 +1,497 @@
+/* GLOBAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Roboto, sans-serif;
+}
+/* VARIBLES */
+:root{
+    --color-black:black;
+    --color-white:white;
+    --color-grey:#f4f4f4;
+    --column-gutter:40px;
+}
+/* UTILITY CLASSESS */
+.text-center{ text-align: center;}
+.u-margin-bottom-big{
+    margin-bottom: 80px;
+}
+/**** HEADER STARTS*****/
+.header{
+    background-color: var(--color-black); 
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+    
+}
+
+/* *************Wave shape*********** */
+.custom-shape-divider-bottom-1721923270 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1721923270 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 121px;
+}
+
+.custom-shape-divider-bottom-1721923270 .shape-fill {
+    fill: #FFFFFF;
+}
+/* Nav Starts */
+.nav{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+}
+.nav::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.nav-contents-left{
+    color: white;
+    float: left;
+}
+.nav-menu{
+    width: 80%;  
+    float: right;
+    text-align: right;
+}
+.nav-list{
+    width: 100%;
+    margin: 0 auto;
+}
+.nav-list::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.nav-contents .nav-list .nav-item-right{
+    margin-right: 20px;
+    list-style: none;
+    display: inline-block;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;   
+}
+
+.mobile-nav-icon{
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    top: 20px;
+    display: none;
+    color: #fff;
+    
+}
+/* REUSABLE COMPONENTS */
+.row{
+    max-width: 1140px;
+    margin: 0 auto; 
+} 
+.row::after{
+   content: "";
+   clear: both;
+   display: table;
+}
+.row [class^="col-"]{
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child){
+    margin-right: var(--column-gutter);
+  }
+.col-1-of-2{
+   width: calc((100% - var(--column-gutter) ) / 2);
+}
+.col-1-of-3{
+    width: calc((100% - (var(--column-gutter) * 2)) / 3);
+ }
+ .col-1-of-4{
+    width: calc((100% - (var(--column-gutter) * 3)) / 4);
+ }
+
+/* ***********HERO STARTS********* */
+.hero{
+    padding: 100px 0;
+}
+.hero-heading{
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--color-white);
+}
+.hero-para{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: var(--color-white);
+}
+.hero-img{
+    background-color: blue;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+}
+.hero-img img{
+    width:100%;
+    border-radius: 10px;
+}
+
+
+/* BTN */
+.btn{
+    text-decoration: none;
+    background-color:blue;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+ background-color: transparent;
+ border-color: blue;
+}
+
+.btn.btn-none{
+    border: none;
+    background-color: blue;
+}
+
+/******************** SECTION SERVICES*******************/
+ .section-services{
+   padding: 100px 0;          
+}
+
+.services{
+    text-align: center;
+    padding: 20px;
+}
+.services-middle{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+.services-img img{
+    width: 90px;
+    height: 90px;
+}
+
+.services h3{
+    margin: 15px 0;
+    font-weight: 600;
+}
+.services-para{
+    margin-bottom: 20px;
+}
+
+.services-icon{
+    font-size: 20px;
+} 
+
+/*-- -------------------SECTION ABOUT------------------ -- */
+.section-about{
+    background-image:linear-gradient(rgba(0, 0,0, 0.6), rgba(0, 0, 0, 0.6)), url(../B.G\ main.jpg);
+    background-size: cover;
+    padding: 100px 0;
+}
+.about-text-box{
+    margin-top: 80px;
+}
+.about-heading{
+    text-transform:capitalize ;
+    font-size: 50px;
+    color: #ffff;
+}
+.about-para{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+.about-img{
+    width: 100%;
+}
+
+/* --------------------SECTION FEATURES---------------------- */
+.section-features{
+    padding: 100px 0;
+}
+.features{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.features::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.features-main-heading{
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.features-img{
+    float: left;
+    width: 40%;
+    height: 200px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.features-text{
+    float: right;
+    width: 60%;
+    padding-left: 20px;
+}
+/* -- -------------Section Reviews Start---------------------- -- */
+.section-reviews{
+    padding: 100px 0;
+    background-color: #000000;
+}
+.reviews-heading{
+    text-align: center;
+    margin-bottom: 30px;
+   color: #fff;
+}
+.reviewers-card{
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 20px 0;
+   text-align: center;
+}
+
+
+.reviewers-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100% ;
+    border: 2px solid black;
+}
+.reviewers-name{
+    margin: 10px 0;
+}
+.reviewers-para{
+    margin-bottom: 10px;
+}
+.reviewers-star-rate{
+    color: orange;
+    text-align: center;
+}
+/* -- ---------------Section Tips Start----------------- -- */
+.section-tips{
+    padding: 100px 0;
+}
+.tips-heading{
+    margin: 40px 0;
+    text-align: center;
+}
+.tips-img img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 30px;
+}
+.tips-para{
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+/* <!----------------Section Form Starts-----------------> */
+.section-contact-form{
+    padding: 100px 0;
+    background-color: #000000;
+}
+.form-heading{
+    text-align: center;
+    color: #f4f4f4;
+    font-size:30px ;
+    margin-bottom: 25px;
+}
+.form{
+    margin: auto;
+    width: 400px;
+    color: #fff;
+}
+
+.top-form-group:not(:last-child){
+    margin-right: 20px;
+}
+.top-form-group{
+    float: left;
+    width: calc((100% - 20px)/ 2);
+}
+.form-group{
+   margin-bottom: 20px;
+}
+
+.form-input,
+textarea{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all .3s;
+}
+
+.form-input:focus, 
+textarea:focus{
+    outline: none;
+    border-color: blue;
+}
+
+
+/*********** Section icon start ***********/
+.sectio-contact-us-{
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.icon{
+    
+    background-color: #f4f4f4;
+}
+.icon-contents{
+    background-color: #000000;
+    padding: 70px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: none;
+    border-top-right-radius: 90px;
+}
+.icon-contents::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.icons1{
+    color: pink;
+    font-size: 30px;
+}
+.icons2{
+    font-size: 30px;
+    color: #f4f4f4;
+}
+.icons3{
+    font-size: 30px;
+    color: blue;
+}
+.icons h4{
+    color: #fff;
+    margin: 10px 0;
+}
+
+/*********** footer section***********/
+.section-footer{
+    background-color: #000;
+    height: 100px;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.section-footer span{
+    font-size: 12px;  
+}
+.section-footer{
+    text-align: center;
+}
+
+/**********************MEDIA QUERY MANAGER ******************
+/*
+    0 - 480px:      Phone
+    481 - 900px:    Tablet portrait
+    901 - 1200px:   Tablet landscape
+    [1200 - 1800] is where our normal styles apply
+    1800px + :      Big desktop
+*/
+
+/*Media query for devices with width less or equal to 900px  */
+@media screen and (max-width: 900px) {
+    .row{
+        max-width: 450px;
+    }
+
+    .row [class^="col-"]{
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 38px;
+      }
+
+      .nav {
+        padding: 20px 27px;
+    }
+    }
+
+     /*Media query for devices with width less or equal to 480px (Mobile phone) */
+@media screen and (max-width: 480px){
+    .row{
+        max-width: 350px;
+        padding: 0 15px;
+    }
+
+    
+    .u-margin-bottom-big {
+        margin-bottom: 30px;
+    }
+
+    .section-services {
+        padding: 30px 0;
+    }
+
+    .mobile-nav-icon{
+        display: block;
+    }
+
+    .section-about {
+        padding: 30px 0;
+    }
+
+    .about-text-box {
+        margin-top: 10px;
+    }
+
+    .nav-contents-left {
+        float: none;
+        margin-bottom: 10px
+    }
+
+    .nav-menu {
+        width: 40%;
+        float: none;
+        text-align: left;
+    }
+
+    .nav-item-right {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 30px 0;
+    }
+
+
+
+
+    
+
+
+}
+
+    
