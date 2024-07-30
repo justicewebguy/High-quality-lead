@@ -324,6 +324,27 @@ html{
 .section-contact-form{
     padding: 100px 0;
     background-color: #000000;
+    position: relative;
+}
+
+.custom-shape-divider-top-1722354556 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1722354556 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-top-1722354556 .shape-fill {
+    fill: #FFFFFF;
 }
 .form-heading{
     text-align: center;
@@ -527,11 +548,26 @@ textarea:focus{
     .hero {
         padding: 30px 0;
     }
-   
+    .form {
+        width: 100%;
+        padding: 0 27px;
+    }
     .top-form-group{
         float: none;
         width: 100%;
     }
+
+    .form-input, textarea {
+        width: 100%;
+    }
 }
 
+
+@media screen and (max-width: 375px){
+    .form {
+        width: 350px;
+        padding: 0 10px;
+        background-color: red;
+    }
+}
     
