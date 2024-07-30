@@ -480,7 +480,8 @@ textarea:focus{
     }
 
     .features-main-heading {
-       font-size: small;
+       font-size: 27px;
+       
        font-weight: 500;
     }
     .features {
