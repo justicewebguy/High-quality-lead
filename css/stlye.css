@@ -489,8 +489,6 @@ textarea:focus{
         margin-bottom: 0;
     }
 
-
-    
     .section-services {
         padding: 30px 0;
     }
@@ -529,13 +527,11 @@ textarea:focus{
     .hero {
         padding: 30px 0;
     }
-
-
-
-
-    
-
-
+   
+    .top-form-group{
+        float: none;
+        width: 100%;
+    }
 }
 
     
